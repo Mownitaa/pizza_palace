@@ -1,12 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Layout from "./components/Layouts/Layout";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home/Home";
 
 function App() {
   return (
-    <div className="App">
-      <img src="images/pizza-palace-icon.png"/>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
+{/* <Switch>
+      <Route exact={true} path="/">
+      <Home></Home>
+      </Route>
+      <Route path="/home"> 
+        <Home></Home>
+      </Route> */}
