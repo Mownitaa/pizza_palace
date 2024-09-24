@@ -1,8 +1,15 @@
 import React from 'react'
+import Layout from '../../components/Layouts/Layout';
+import "../../styles/HomeStyles.css";
+import Section1 from './Section1'
 
 function Home() {
   return (
-    <div>Pizza Palace</div>
+    <>
+<Layout>
+  <Section1/>
+</Layout>
+    </>
   )
 }
 
