@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Pizza from "../../assets/hero/pizza.png";
+import Pizza from "../../assets/hero/hero-img.png";
 import { Link } from "react-router-dom";
 
-const Section1 = () => {
+const HeroSection = () => {
   return (
     <section className="hero_section">
       <Container>
@@ -39,4 +39,4 @@ const Section1 = () => {
   );
 };
 
-export default Section1
+export default HeroSection

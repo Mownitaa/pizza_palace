@@ -1,3 +1,4 @@
+/* hero section */
 .hero_section {
     position: relative;
     background: url("../assets/hero/banner.jpg") no-repeat center center;
@@ -12,9 +13,9 @@
     background-size: cover;
     position: absolute;
     top: -20px;
-    right: 15px;
+    right: 45px;
     width: 180px;
-    height: 176px;
+    height: 182px;
     text-align: center;
   }
   .hero_section .badge_text {
@@ -51,14 +52,49 @@
     padding: 0 5%;
   }
   
-
+  /* about section */
+  .about_section {
+    padding-top: 80px;
+    padding-bottom: 300px;
+    /* background: url("") no-repeat center center; */
+    background: url("../assets/about/banner.png") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+  }
+  .about_section h2 {
+    font-size: 3.5rem;
+  }
+  .about_section p {
+    color: var(--grey);
+    padding: 20px 30px;
+    font-size: 19px;
+  }
+  .about_wrapper {
+    background: var(--yellow);
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+  .about_box .about_icon img {
+    max-width: 25%;
+  }
+  .about_box h4 {
+    font-size: 26px;
+    line-height: 1;
+    letter-spacing: 0.5008px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .about_box p {
+    padding: 0 20px;
+  }
+ 
 
   @media (max-width: 767px) {
     .hero_section .price_badge {
       top: -10px;
     right: 5px;
-    width: 140px;
-    height: 130px;
+    width: 170px;
+    height: 90px;
     }
     .hero_section .badge_text .h4_xs {
       font-size: 1.6rem;
@@ -74,7 +110,7 @@
   @media (max-width: 991px) {
     .hero_section .price_badge {
       top: -10px;
-    right: 40px;
+    right: 70px;
     width: 190px;
     height: 190px;
     }

@@ -1,13 +1,15 @@
 import React from 'react'
 import Layout from '../../components/Layouts/Layout';
 import "../../styles/HomeStyles.css";
-import Section1 from './Section1'
+import HeroSection from './HeroSection'
+import AboutSection from './AboutSection';
 
 function Home() {
   return (
     <>
 <Layout>
-  <Section1/>
+  <HeroSection/>
+  <AboutSection/>
 </Layout>
     </>
   )
