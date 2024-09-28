@@ -10,8 +10,9 @@ import Image7 from "../../assets/menu/pizza7.jpeg";
 import Image8 from "../../assets/menu/pizza8.jpeg";
 import Cards from "../../components/Layouts/Cards";
 import { Link } from "react-router-dom";
+import "../../styles/MenuStyles.css"
 
-const mockData = [
+const fakeData = [
     {
       id: "0001",
       image: Image1,
@@ -79,7 +80,7 @@ const mockData = [
   ];
   
   // Rating Data
-  const renderRatingIcons = (rating) => {
+  const ratingIcons = (rating) => {
     const stars = [];
   
     for (let i = 0; i < 5; i++) {
@@ -102,15 +103,14 @@ function MenuSection() {
       <Container>
         <Row>
           <Col lg={{ span: 8, offset: 2 }} className="text-center mb-5">
-            <h2>OUR CRAZY BURGERS</h2>
+            <h2>GET A TASTE OF NEW YORK THIS AUTUMN</h2>
             <p className="para">
-              Aliquam a augue suscipit, luctus neque purus ipsum neque undo
-              dolor primis libero tempus, blandit a cursus varius magna
+            With our limited-edition menu of mouth-watering East Coast classics.
             </p>
           </Col>
         </Row>
         <Row>
-          {mockData.map((cardData, index) => (
+          {fakeData.map((cardData, index) => (
             <Cards
               key={index}
               image={cardData.image}
@@ -118,7 +118,7 @@ function MenuSection() {
               title={cardData.title}
               paragraph={cardData.paragraph}
               price={cardData.price}
-              renderRatingIcons={renderRatingIcons}
+              ratingIcons={ratingIcons}
             />
           ))}
         </Row>

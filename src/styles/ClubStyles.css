@@ -1,0 +1,12 @@
+/* club section */
+.contact_section {
+    width: 100%;
+  }
+  .club_section h2 {
+    font-size: 3.5rem;
+  }
+  .club_section p {
+    color: var(--grey);
+    padding: 20px 0px;
+    font-size: 19px;
+  }

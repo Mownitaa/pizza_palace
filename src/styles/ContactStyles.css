@@ -1,0 +1,49 @@
+/* about section */
+.contact_section {
+    padding-top: 80px;
+    padding-bottom: 300px;
+    background: url("../assets/about/banner.png") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+  }
+  .contact_section h2 {
+    font-size: 3.5rem;
+  }
+  .contact_section p {
+    color: var(--grey);
+    padding: 20px 30px;
+    font-size: 19px;
+  }
+  .contact_wrapper {
+    background: var(--yellow);
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+  .contact_box .contact_icon img {
+    max-width: 25%;
+  }
+  .contact_box h4 {
+    font-size: 26px;
+    line-height: 1;
+    letter-spacing: 0.5008px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .contact_box p {
+    padding: 0 20px;
+  }
+
+
+  @media (max-width: 767px) {
+    .contact_section h2 {
+      font-size: 2.5rem;
+    }
+    .contact_section p {
+      padding: 20px 30px;
+      font-size: 16px;
+    }
+  }
+
+  /* @media (max-width: 992px) {
+
+  } */
