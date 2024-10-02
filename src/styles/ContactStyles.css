@@ -1,8 +1,8 @@
-/* about section */
+/* contact section */
 .contact_section {
     padding-top: 80px;
     padding-bottom: 300px;
-    background: url("../assets/about/banner.png") no-repeat center center;
+    background: url("../assets/contact/banner.png") no-repeat center center;
     background-size: cover;
     width: 100%;
   }

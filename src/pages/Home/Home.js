@@ -1,11 +1,13 @@
 import React from 'react'
 import Layout from '../../components/Layouts/Layout';
-import "../../styles/HeroStyles.css";
 import HeroSection from './HeroSection'
 import ContactSection from './ContactSection';
 import MenuSection from './MenuSection';
 import ClubSection from './ClubSection';
 import BlogSection from './BlogSection';
+import SidesSection from './SidesSection';
+
+import "../../styles/HeroStyles.css";
 
 function Home() {
   return (
@@ -14,6 +16,7 @@ function Home() {
   <HeroSection/>
   <MenuSection/>
   <ClubSection/>
+  <SidesSection/>
   <BlogSection/>
   <ContactSection/>
 </Layout>

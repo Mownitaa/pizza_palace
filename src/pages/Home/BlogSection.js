@@ -1,9 +1,7 @@
 import React from 'react'
 
-function BlogSection() {
+export default function BlogSection() {
   return (
-    <div>Hello my blog</div>
+    <div>BlogSection</div>
   )
 }
-
-export default BlogSection

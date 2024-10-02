@@ -1,6 +1,7 @@
 /* club section */
-.contact_section {
+.club_section {
     width: 100%;
+    padding: 40px;
   }
   .club_section h2 {
     font-size: 3.5rem;
@@ -9,4 +10,40 @@
     color: var(--grey);
     padding: 20px 0px;
     font-size: 19px;
+  }
+  .club_section .club_text{
+    padding: 50px 10px;
+  }
+  .bg_parallax_scroll {
+    background: url("../assets/club/parallax-img.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 450px;
+    position: relative;
+    text-align: center;
+    color: var(--white);
+  }
+  .bg_parallax_scroll h2{
+    font-size: 5rem;
+    font-weight: 500;
+    font-family: var(--oswald-font);
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 4px 0px var(--brown);
+  }
+
+
+  @media(max-width: 767px){
+    .bg_parallax_scroll {
+      background-attachment: scroll;
+    }
+  }
+  @media(max-width: 992px){
+    .bg_parallax_scroll {
+      background-attachment: scroll;
+    }
   }
