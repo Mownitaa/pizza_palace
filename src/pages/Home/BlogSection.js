@@ -17,7 +17,7 @@ export default function BlogSection() {
                 See The Full Range
               </Link>
       </div>
-<Container className='w-75 p-5 border rounded recipe_section p-4'>
+<Container className='w-75 rounded recipe_section p-4'>
 <div className='d-flex justify-center align-items-center'>
       <img src={Recipe1} className="img-fluid" alt="blog"/>
       <div>
