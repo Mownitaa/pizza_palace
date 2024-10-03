@@ -88,18 +88,38 @@ function SidesSection() {
     autoplaySpeed: 2000,
     cssEase: "linear",
     nextArrow: <SampleNextArrow/>,
-    prevArrow: <SamplePrevArrow/>
+    prevArrow: <SamplePrevArrow/>,
+    responsive:[
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+        }
+      },  
+      {
+        breakpoint: 340,
+        settings: {
+          slidesToShow: 1,
+        }
+      },  
+    ]
   };
   return (
       <Container className='sides_section text-center py-5'>
-      <h2>In Case your mood changes</h2>
+      <h1>In Case your mood changes</h1>
       <p>Satisfy your hunger with out other items</p>
     <div className='p-5'>
     <Slider {...settings}>
         {items.map((item)=>(
            <div className='text-center'>
             <img src={item.image} className="p-3 w-100 rounded rounded-pill mb-4 mb-md-0" key={item.index} alt="Item"/>
-            <p>{item.title}</p>
+            <h6>{item.title}</h6>
             </div>
           ))}
       </Slider>

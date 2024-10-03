@@ -1,0 +1,23 @@
+.blog_section{
+ background: url("../assets/blog/blogImg.jpg") no-repeat center center;
+    background-size: cover;
+    width:100;
+  }
+.blog_section h2 {
+    font-size: 3.5rem;
+    color: var(--black);
+  }
+  .blog_section .para {
+    color: var(--grey);
+    padding: 10px 100px;
+    font-size: 19px;
+  }
+  .blog_section .recipe_section p{
+    color: var(--brown)
+  }
+
+  @media(max-width:767px){
+    .blog_section .recipe_section{
+      display:none;
+    }
+  }
