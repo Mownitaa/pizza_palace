@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Pizza from "../../assets/hero/hero-img.png";
 import { Link } from "react-router-dom";
+import "../../styles/HeroStyles.css";
 
 const HeroSection = () => {
   return (
@@ -24,9 +25,11 @@ const HeroSection = () => {
               <h1 className="text-white">New Pizza</h1>
               <h2 className="text-white">With Extra Cheese</h2>
               <p className="text-white pt-2 pb-4">
-                Join the PizzaPalace Club to enjoy access to exclusive offers and irresistible rewards, like free food and drinks every time you dine.
+                Join the PizzaPalace Club to enjoy access to exclusive offers
+                and irresistible rewards, like free food and drinks every time
+                you dine.
               </p>
-              <Link to="/" className="btn order_now">
+              <Link to="/menu" className="btn order_now">
                 Order Now
               </Link>
             </div>
@@ -37,4 +40,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection
+export default HeroSection;

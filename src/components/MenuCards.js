@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-function Cards({ image, rating, title, paragraph, price, ratingIcons }) {
+function MenuCards({ image, rating, title, paragraph, price, ratingIcons }) {
   return (
     <Col sm={6} lg={4} xl={3} className="mb-4">
       <Card className="overflow-hidden">
@@ -37,4 +37,4 @@ function Cards({ image, rating, title, paragraph, price, ratingIcons }) {
   );
 }
 
-export default Cards;
+export default MenuCards;
