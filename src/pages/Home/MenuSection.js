@@ -124,34 +124,17 @@ function MenuSection() {
             />
           ))}
         </Row>
-        <Link
-          to="/menu"
-          style={{ color: "var(--light-red)" }}
-          className="d-flex justify-content-end align-items-center p-1"
-        >
-          View more<i className="bi bi-arrow-right fs-1 ps-2"></i>
-        </Link>
-
-        <Row className="pt-5">
-          <Col sm={6} lg={5}>
-            <div className="ads_box ads_img1 mb-5 mb-md-0">
-              <h4 className="mb-0">GET YOUR FREE</h4>
-              <h5>CHEESE FRIES</h5>
-              <Link to="/" className="btn btn_red px-4 rounded-0">
-                Learn More
-              </Link>
-            </div>
-          </Col>
-          <Col sm={6} lg={7}>
-            <div className="ads_box ads_img2">
-              <h4 className="mb-0">GET YOUR FREE</h4>
-              <h5>COLD DRINKS</h5>
-              <Link to="/" className="btn btn_red px-4 rounded-0">
-                Learn More
-              </Link>
-            </div>
-          </Col>
-        </Row>
+        <div>
+          <Link
+            to="/menu"
+            style={{ color: "var(--light-red)" }}
+            className="d-flex justify-content-end align-items-center p-1"
+          >
+            <h4>
+              View more<i className="bi bi-arrow-right ps-1"></i>
+            </h4>
+          </Link>
+        </div>
       </Container>
     </section>
   );

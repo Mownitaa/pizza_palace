@@ -71,32 +71,6 @@
   transform: translateY(0px);
   opacity: 1;
 }
-.menu_section .ads_box {
-  text-align: left;
-  padding: 80px 35px 50px;
-  border-radius: 6px;
-}
-.menu_section .ads_img1 {
-  background: url("../assets/menu/ad1.jpg") no-repeat center center;
-  background-size: cover;
-}
-.menu_section .ads_img2 {
-  background: url("../assets/menu/ad2.jpg") no-repeat center center;
-  background-size: cover;
-}
-.menu_section .ads_box h4 {
-  font-size: 2.25rem;
-  font-weight: 300;
-  color: var(--brown);
-}
-.menu_section .ads_box h5 {
-  font-size: 2.375rem;
-  color: var(--brown);
-}
-.menu_section .ads_box a {
-  margin-top: 15px;
-  font-size: 18px;
-}
 /*    
   @media (max-width: 767px) {
 
