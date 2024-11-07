@@ -181,7 +181,7 @@ function Menu() {
                                 style={{
                                   backgroundColor: "var(--bg-coffee)",
                                   color: "var(--yellow)",
-
+                                  borderColor: "white",
                                   fontWeight: "500",
                                   fontSize: "1rem",
                                 }}
@@ -201,7 +201,9 @@ function Menu() {
             <div className="py-5">
               <Card>
                 <Card.Body>
-                  <h5 className="mb-4">Filter by Price</h5>
+                  <h4 style={{ color: "var(--bg-coffee)" }} className="mb-4">
+                    Filter by Price
+                  </h4>
                   <Form>
                     <Form.Group
                       className="d-flex align-items-center pb-2"
@@ -276,9 +278,31 @@ function Menu() {
                   </Form>
                 </Card.Body>
               </Card>
-              <div className="mt-3 p-3 bg-white rounded">
-                <h5>Our Best Sellers</h5>
-              </div>
+              <Card className="mt-4">
+                <Card.Body>
+                  <h4 style={{ color: "var(--bg-coffee)" }} className="mb-4">
+                    Our Best Sellers
+                  </h4>
+                  {menuItems.map((item, index) => (
+                    <div
+                      key={index}
+                      className="d-flex justify-content-between align-items-center"
+                    >
+                      <div className="w-auto">
+                        <h6>{item.title}</h6>
+                        <p>{item.price}</p>
+                      </div>
+                      <div className="d-flex justify-content-end">
+                        <img
+                          style={{ width: "30%" }}
+                          src={item.image}
+                          alt={item.name}
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </Card.Body>
+              </Card>
             </div>
           </div>
         </Container>
