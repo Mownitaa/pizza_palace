@@ -13,7 +13,7 @@ export default function BlogSection() {
         <p className="para">
           Discover our delicious pizzas, breads and dressings to enjoy at home.
         </p>
-        <Link to="/" className="btn order_now">
+        <Link to="/blog" className="btn order_now">
           See The Full Range
         </Link>
       </div>

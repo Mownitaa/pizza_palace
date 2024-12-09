@@ -55,7 +55,7 @@ function Footer() {
       <hr />
       <div className="d-block d-md-flex justify-content-between align-items-center">
         <p>
-          <i class="bi bi-c-circle-fill"></i> PizzaPalace 2024 |
+          <i className="bi bi-c-circle-fill"></i> PizzaPalace 2024 |
           mabiazaman07@gmail.com
         </p>
         {/* icons section */}

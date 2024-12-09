@@ -28,7 +28,7 @@ function ClubSection() {
           </Col>
         </Row>
         <Row>
-          <Col lg={7} className="mb-5 mb-lg-0">
+          <Col lg={7} className="mb-0">
             <img src={ClubReward} className="hero_img img-fluid" alt="Hero" />
           </Col>
           <Col lg={5} className="club_text mb-5 mb-lg-0">
